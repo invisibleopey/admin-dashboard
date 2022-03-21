@@ -4,4 +4,18 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  gap: 5px;
+}
+body > * {
+  border: 1px solid red;
+}
+header {
+  grid-column: 2 / 3;
+}
+.sidebar {
+  grid-row: 1 / 3;
 }
