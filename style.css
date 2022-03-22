@@ -95,6 +95,15 @@ header .action-links a {
   grid-template-rows: 100px 150px 100px;
   align-items: start;
 }
+.sidebar .header-container {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  gap: 10px;
+}
+.sidebar .header-container h2 {
+  font-size: 1.5em;
+}
 .content {
   background: var(--gray);
 }
