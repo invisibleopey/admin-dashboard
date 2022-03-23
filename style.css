@@ -179,3 +179,22 @@ header .action-links a {
 .content .announcements .card p:last-child {
   border: none;
 }
+
+.content .trending .card {
+  padding: 30px;
+  display: grid;
+  gap: 10px;
+}
+.content .trending .card .topic {
+  display: grid;
+  grid-template-columns: max-content 200px;
+  grid-template-rows: max-content max-content;
+  column-gap: 30px;
+}
+.content .trending .card .topic img {
+  grid-row: 1 / 3;
+}
+.content .trending .card .topic span:last-child {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
