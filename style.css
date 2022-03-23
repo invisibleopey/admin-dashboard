@@ -124,7 +124,13 @@ header .action-links a {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 10px;
+  gap: 32px;
+}
+.content .section-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 .content .projects {
   grid-row: 1 / 3;
@@ -132,7 +138,32 @@ header .action-links a {
 .content .projects .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 16px;
+}
+.content .card {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 20px 50px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px;
+}
+.content .card p {
+  margin-top: 0px;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.content .projects .card {
+  display: grid;
+  border-left: 7px solid orange;
+}
+.content .projects .card span {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.content .projects .card div {
+  justify-self: end;
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  gap: 32px;
 }
 
 /* TODO: Fix the height to 100vh, remove scrollbars */
