@@ -53,7 +53,7 @@ header .user-info {
 header .user-info p {
   font-weight: 600;
 }
-header .profile-pic {
+.profile-pic {
   width: 40px;
   height: auto;
 }
@@ -120,4 +120,19 @@ header .action-links a {
 }
 .content {
   background: var(--gray);
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
 }
+.content .projects {
+  grid-row: 1 / 3;
+}
+.content .projects .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* TODO: Fix the height to 100vh, remove scrollbars */
