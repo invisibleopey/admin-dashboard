@@ -165,3 +165,17 @@ header .action-links a {
   grid-template-columns: max-content max-content max-content;
   gap: 32px;
 }
+.content .announcements .card {
+  padding: 30px 50px;
+}
+.content .announcements .card span {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.content .announcements .card p {
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.content .announcements .card p:last-child {
+  border: none;
+}
